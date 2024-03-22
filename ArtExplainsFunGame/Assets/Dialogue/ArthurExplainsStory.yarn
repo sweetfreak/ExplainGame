@@ -1,0 +1,59 @@
+﻿title: Sign
+tags:
+---
+Arthur: Oh, a sign!
+    -> What's it say?
+        Arthur: Press E or Triangle to read signs
+            -> That wasn't helpful at all.
+                <<jump NotHelpful>>
+            -> Who made this sign?
+                <<jump Who>>
+    -> Ignore it.
+        <<stop>>
+===
+
+title: NotHelpful
+---
+Arthur: No... no it was not.
+<<jump MovingOn>>
+===
+
+title: Who
+---
+Arthur: Well... it was me.
+<<jump MovingOn>>
+===
+
+title: MovingOn
+---
+Arthur: But that doesn't mean you should ignore future signs.
+Arthur: Sometimes they can be very helpful...
+Arthur: Just... not this one.
+===
+
+title: Can
+tags:
+---
+Arthur: Oh my! It's the <color=blue> can </color>!
+    -> I love the can!
+        <<jump loveCan>>
+     -> I hate the can!
+        <<jump hateCan>>
+     -> Enough Can!   
+
+===
+title: loveCan
+---
+Arthur: Look at the glow!
+Arthur: Look at its exquisite design!
+Arthur: ...
+Arthur: I'm over the can.
+ 
+        
+===
+
+title: hateCan
+---
+Arthur: This can... it's bad.
+Arthur: I'll destroy this can if it's the last thing I do.
+===
